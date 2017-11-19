@@ -1,0 +1,78 @@
+{
+	"id": "f13a7e03-e793-54a5-780e-4519a2336792",
+	"name": "django-project",
+	"description": "",
+	"order": [
+		"c15c3eeb-83b6-338e-04f5-4143788091b5",
+		"05e68495-2be6-5b59-cc1a-8aa937316c32"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1511097216608,
+	"owner": "271563",
+	"public": false,
+	"requests": [
+		{
+			"id": "05e68495-2be6-5b59-cc1a-8aa937316c32",
+			"headers": "",
+			"headerData": [],
+			"url": "127.0.0.1:8000/user/upload-video/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f13a7e03-e793-54a5-780e-4519a2336792",
+			"data": [
+				{
+					"key": "video",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Upload Video Url",
+			"description": "This this the multipart request in which it takes video file input and key name as `video`\nResponse contain video uploaded enpoint\n\nBaseUrl is localhost:8000/user/",
+			"descriptionFormat": "html",
+			"time": 1511097381456,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c15c3eeb-83b6-338e-04f5-4143788091b5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "127.0.0.1:8000/user/login/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f13a7e03-e793-54a5-780e-4519a2336792",
+			"data": [],
+			"dataMode": "raw",
+			"name": "login api ",
+			"description": "This is login api which takes json as a request with the keys email, password",
+			"descriptionFormat": "html",
+			"time": 1511097220441,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"email\":\"anshul\",\n\t\"password\":\"python123\"\n\t\n}"
+		}
+	]
+}
